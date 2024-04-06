@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Devloper Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins",
+            sans-serif;
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(18, 18, 62);
+
+
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: center
+            }
+
+            nav ul li {
+                list-style: none;
+                margin: 0 23px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                margin: 0 23px;
+                color: white;
+            }
+
+            nav ul li a:hover {
+                text-decoration: none;
+                margin: 0 23px;
+                color: rgb(5, 173, 235);
+                font-size: 1.01rem;
+
+            }
+
+            main hr {
+                border: 0;
+                background-color: cadetblue;
+                height: 1.2px;
+                margin: 40px 84px;
+
+            }
+
+            .left {
+                font-size: 1.5rem;
+            }
+
+            .firstSection {
+
+                display: flex;
+                justify-content: space-around;
+                margin: 130px 0;
+                align-items: center;
+                height: 45vh;
+
+            }
+
+            .firstSection>div {
+                width: 30%;
+
+            }
+
+            .leftSection {
+                /* width: 34px;
+        background-color: brown ; */
+                font-size: 2rem;
+                /* margin: 70px 0; */
+            }
+
+            .leftSection .buttons {
+                padding: 50px 0;
+            }
+
+            .leftSection .btn {
+                padding: 12px;
+                background-color: #1e2167;
+                color: white;
+                border: 2px solid white;
+                border-radius: 6px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .leftSection .btn:hover {
+                box-shadow: 0 0 10px white;
+
+            }
+
+            /* .rightSection {
+                /* width: 34px; */
+                /* background-color: brown ; */
+
+            } */
+
+            .purple {
+                color: blueviolet;
+            }
+
+            #element {
+                color: blueviolet;
+            }
+        
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+
+
+        }
+
+        .project {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .project .box {
+            background: white;
+            width: 62vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+
+
+        }
+
+
+
+
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .txt-gray {
+            color: gray;
+        }
+
+
+        .aboutSection {
+
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+
+        }
+
+        .aboutSection>div {
+            width: 30%;
+
+        }
+
+        .secondSection .vertical {
+            height:150px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+            padding: auto;
+
+        }
+
+        .secondSection .vertical-title {
+            margin: 20px;
+
+        }
+
+        .project .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: rgb(1, 0, 0);
+            margin: 0 120px;
+
+        }
+
+        .project .vertical-title {
+            margin: 20px;
+
+        }
+
+        .img-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-title {
+            /* padding: ; */
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 18px;
+
+        }
+
+        .vertical-desc {
+
+            /* position: relative; */
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 15px;
+
+        }
+
+        footer {
+
+            background-color: #0e0e1a;
+            /* height: 233px; */
+        }
+
+        .footer {
+            justify-content: space-evenly;
+            display: flex;
+            padding: 23px 122px;
+        }
+
+        .footer ul {
+            list-style: none;
+
+
+
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .projectText {
+            padding: 12px 0;
+
+        }
+        .lorem
+        {
+            padding: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+
+<!-- //scroll top -->
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home </a></li>
+
+                    <li><a href="#about">About</a></li>
+                   
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#footer">Contact us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection " id="home">
+            <div class="leftSection">Hi, My name is <span class="purple">Aditya</span>
+                <div>I'm passionative</div>
+                <div>Mobile Application Devloper</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <!-- <button class="btn" type="button" data-download="myres">Download Resume</button> -->
+                    <a href="res.pdf" attributes-list download="option-value " class="button_click"><button class="btn"
+                            type="button" data-download="myres">Download Resume</button></a>
+
+
+
+                    <a href="https://github.com/AdityaGangani1/codeway" class="button_click"><button class="btn">Visit
+                            Github</button></a>
+
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="oned.png" alt="no">
+
+            </div>
+        </section>
+        <hr>
+
+
+        <section class="aboutSection" id="about">
+
+
+
+            <div class="rightSection">
+                <img src="about.png" alt="no">
+                <!-- <img src="bg.png"> -->
+            </div>
+
+            <div class="leftSection">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem quasi error? Nostrum,
+                    dicta cum. In quaerat illum odio magni!</div>
+                <!-- <div>Mobile Application Devloper</div> -->
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+        <hr>
+
+        <!-- second section -->
+
+        <section class="secondSection" id="about">
+
+            <span class="text-gray">What i have done</span>
+            <h1>Carrier Path</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="milestone.png">
+                    <div class="verticl-title">
+                        Flutter Internship
+                    </div>
+
+                    <div class="vertical-desc">
+                        Completed Internship in flutter app devlopment .
+                    </div>
+                </div>
+
+
+
+                <div class="vertical">
+                    <img class="img-top" src="milestone.png">
+                    <div class="verticl-title">
+                        MCA
+                    </div>
+                    <div class="vertical-desc">
+                        Pursing 
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img class="img-top" src="milestone.png">
+                    <div class="verticl-title">
+                        BCA
+                    </div>
+                    <div class="vertical-desc">
+                        Completed BCA from Saurashtra University
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top" src="milestone.png">
+                    <div class="verticl-title">
+                        12th
+                    </div>
+                    <div class="vertical-desc">
+                        GSHSEB
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- project -->
+
+
+
+
+
+
+        </section>
+
+
+        <hr>
+
+        <section class="project" id="project">
+
+            <h2>Projects</h2>
+
+            <div class="projectText">
+                <div class="lorem">
+                    <h4>T2S</h4>
+                    <p>Responsive user interface were added to mobile app, Text to speech functionality added to variety of files epub, html, text, pdf.</p>
+                </div>
+
+                <div class="lorem">
+                    <h4>UI design</h4>
+                    <p>Improves user experience by putting responsive design ideas into practice</p>
+                </div>
+                <div class="lorem">
+                    <h4>To-do</h4>
+                    <p>The user of this app can add and remove data</p>
+                </div>
+                <div class="lorem">
+                    <h4>WhatsApp UI</h4>
+                    <p>Create a UI design akin to the multi-screen WhatsApp app. </p>
+
+
+                </div>
+                <div class="lorem">
+                    <h4>Music player</h4>
+                    <p>In the process of developing a music player app that allows users to authenticate themselves using Google Sign-in and OTPP.
+                    </p>
+                </div>
+
+                <div class="lorem">
+                    <h4>AudioBookify</h4>
+                    <p>Developing a small-scale LMS where users can read and listen to stories, comic books, or any other kind of book
+
+                    </p>
+                </div>
+            </div>
+
+
+
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <div class="footer" id="footer">
+            <div class="footer-first">
+                <!-- <h3> devp portfolio </h3> -->
+            <h3>Get in touch</h3>
+            </div>
+            
+            <div class="footer-fouth">
+                <ul>
+            <p>sungangani@gmail.com</p>
+            <p>91+ 78945658289</p>
+                    <!-- <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>New</li> -->
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-rights">
+            Copyrights &#169; www.portfolio com | all rights reserved </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i></i>.', '&amp; Graphic designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
